@@ -1,0 +1,44 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "fastapi.params",
+        "description": "fastapi.params",
+        "isExtraImport": true,
+        "detail": "fastapi.params",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Post(BaseModel):\n    title : str\n    content : str\n    private : Optional\n@app.get(\"/\")\nasync def root():\n    return {\"message\":\"H\"}\n@app.post(\"/posts\")\ndef post(pasyload: Post):\n    print(pasyload)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "post",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def post(pasyload: Post):\n    print(pasyload)\n    return {\"message\":\"Success\"}",
+        "detail": "main",
+        "documentation": {}
+    }
+]
