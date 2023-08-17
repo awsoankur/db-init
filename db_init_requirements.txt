@@ -1,0 +1,5 @@
+sqlalchemy
+fastapi
+faker
+colorama
+python-dotenv
